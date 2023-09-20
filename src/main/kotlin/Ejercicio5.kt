@@ -7,8 +7,7 @@ RETO OPCIONAL: Imprime el índice del título más largo, para el ejemplo anteri
 3, porque es el índice de “Batman: El caballero de la noche”*/
 
     fun peliculaMasLarga() : String {
-        val peliculas = Array<String>(5) {"Jumanji";"Toy Story"; "Pulp Fiction"; "Batman: El caballero de la noche";"Kill Bill"}
-
+        val peliculas = arrayOf("Jumanji","Toy Story", "Pulp Fiction", "Batman: El caballero de la noche","Kill Bill")
         var mayorLongitud =0
         var peliculaMasLarga =""
 
@@ -19,8 +18,6 @@ RETO OPCIONAL: Imprime el índice del título más largo, para el ejemplo anteri
                 peliculaMasLarga=pelicula
             }
         }
-
-
         return peliculaMasLarga
     }
 }

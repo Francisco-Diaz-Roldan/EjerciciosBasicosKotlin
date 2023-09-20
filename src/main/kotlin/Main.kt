@@ -42,4 +42,10 @@ fun main(args: Array<String>) {
     val resultado5 = ejercicio5.peliculaMasLarga()
     println(resultado5)
     println("")
+
+    //Ejercicio 6
+    println("Ejercicio6")
+    val ejercicio6 = Ejercicio6()
+    val resultado6 = ejercicio6.rangoPares()
+    println(resultado6)
 }
