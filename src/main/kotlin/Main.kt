@@ -1,13 +1,13 @@
 import com.example.ejerciciosbasicosdeprogramacionenkotlin.Ejercicio2
 
 fun main(args: Array<String>) {
-
+/*
     println("Ejercicio1")
     // Creo una instancia de la clase Ejercicio1
     val ejercicio1 = Ejercicio1()
 
     // Llamo a la función pocionMagica
-    val resultado1 = ejercicio1.pocionMagica(120)
+    val resultado1 = ejercicio1.pocionMagica()
 
     // Imprimo el resultado en la consola
     println(resultado1)
@@ -22,6 +22,8 @@ fun main(args: Array<String>) {
     println(resultado2)
     println("")
 
+
+
     //Ejercicio 3
     println("Ejercicio3")
     val ejercicio3 = Ejercicio3()
@@ -29,12 +31,23 @@ fun main(args: Array<String>) {
     println(resultado3)
     println("")
 
+    */
+    //Ejercicio 3 Opcional
+    println("Ejercicio 3 Opcional")
+    val ejercicio3Op = Ejercicio3()
+    val resultado3Op = ejercicio3Op.uberOpcional()
+    println(resultado3Op)
+    println("")
+
+    /*.
     //Ejercicio 4
     println("Ejercicio4")
     val ejercicio4 = Ejercicio4()
     val resultado4 = ejercicio4.clima()
     println(resultado4)
     println("")
+
+
 
     //Ejercicio 5
     println("Ejercicio5")
@@ -43,9 +56,14 @@ fun main(args: Array<String>) {
     println(resultado5)
     println("")
 
+
+
     //Ejercicio 6
     println("Ejercicio6")
     val ejercicio6 = Ejercicio6()
     val resultado6 = ejercicio6.rangoPares()
     println(resultado6)
+     */
+
+
 }
