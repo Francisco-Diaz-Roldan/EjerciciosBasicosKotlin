@@ -24,7 +24,6 @@ RETO OPCIONAL: Imprime el índice del título más largo, para el ejemplo anteri
     fun peliculaMasLargaOpcional(): String{
         val peliculas = arrayOf("Jumanji","Toy Story", "Pulp Fiction", "Batman: El caballero de la noche","Kill Bill")
         var mayorLongitud =0
-        var posicionActual =0
         var peliculaMasLarga =""
 
         var resultado =""
@@ -34,7 +33,6 @@ RETO OPCIONAL: Imprime el índice del título más largo, para el ejemplo anteri
             if (longitudActual>=mayorLongitud){
                 mayorLongitud=longitudActual
                 peliculaMasLarga=pelicula
-                posicionActual= posicion
                 resultado="Pelicula: '$peliculaMasLarga', posicion: $posicion"
             }
         }
