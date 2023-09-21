@@ -20,4 +20,25 @@ RETO OPCIONAL: Imprime el índice del título más largo, para el ejemplo anteri
         }
         return peliculaMasLarga
     }
+
+    fun peliculaMasLargaOpcional(): String{
+        val peliculas = arrayOf("Jumanji","Toy Story", "Pulp Fiction", "Batman: El caballero de la noche","Kill Bill")
+        var mayorLongitud =0
+        var posicionActual =0
+        var peliculaMasLarga =""
+
+        var resultado =""
+
+        for ((posicion,pelicula) in peliculas.withIndex()){
+            val longitudActual = pelicula.length
+            if (longitudActual>=mayorLongitud){
+                mayorLongitud=longitudActual
+                peliculaMasLarga=pelicula
+                posicionActual= posicion
+                resultado="Pelicula: '$peliculaMasLarga', posicion: $posicion"
+            }
+        }
+        return resultado
+    }
+
 }
