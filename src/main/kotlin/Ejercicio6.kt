@@ -14,17 +14,18 @@ imprimir “Inserta un número positivo*/
     }
 
     fun rangoPares(){
-        var N : Int =1
+
         do {
             println("Inserta un número positivo")
-            val N = readLine()!!.toInt()
+            var N = readLine()!!.toInt()
+            println("Numeros pares en el rango de 1 a $N...")
+            for (i in 1..N step 1){
+                if (esPar(i)){
+                    println(i)
+                }
+            }
         }while (N<0)
 
-        println("Numeros pares en el rango de 1 a $N...")
-        for (i in 1..N step 1){
-            if (esPar(i)){
-               println(i)
-            }
-        }
+
     }
 }
