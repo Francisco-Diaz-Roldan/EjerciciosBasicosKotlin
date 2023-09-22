@@ -5,7 +5,7 @@ contrario imprime “La poción es mediocre, sangre sucia inmunda”.*/
 
     fun pocionMagica() : String{
         println("Introduce una cantidad en mg para hacer una pocion magica: ")
-        val cantidad = readLine()!!.toIntOrNull()
+        val cantidad = readln().toIntOrNull()
         var resultado = ""
         if (cantidad != null) {
             if (cantidad > 100) {

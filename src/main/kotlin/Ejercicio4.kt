@@ -11,7 +11,7 @@ Recomendación: Usa When.*/
 
     fun clima() : String {
         println("¿Cómo es el clima de hoy?")
-        val respuesta = readLine()?.toIntOrNull()
+        val respuesta = readlnOrNull()?.toIntOrNull()
         return when(respuesta){
            1 -> "Soleado"
            2 -> "Nublado"

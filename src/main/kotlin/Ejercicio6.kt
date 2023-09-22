@@ -3,21 +3,15 @@ class Ejercicio6 {
 si N = 6, debe imprimir “2, 4, 6”. Hazlo con un for o un while. Si el número es menor o igual a 0, debes
 imprimir “Inserta un número positivo*/
 
-    fun esPar(n : Int) : Boolean{
-        var par : Boolean
-        if (n%2==0){
-            par =true
-        }else {
-            par=false
-        }
-        return par
+    private fun esPar(n: Int): Boolean {
+        return n % 2 == 0
     }
 
     fun rangoPares(){
 
         do {
             println("Inserta un número positivo")
-            var N = readLine()!!.toInt()
+            val N = readln().toInt()
             println("Numeros pares en el rango de 1 a $N...")
             for (i in 1..N step 1){
                 if (esPar(i)){

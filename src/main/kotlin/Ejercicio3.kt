@@ -16,9 +16,9 @@ imprimir el mensaje, vuelve a pedir los datos de distancia y disponibilidad*/
 
     fun uber(km: Float, disponible: Boolean): String {
         return when {
-            km <= 0.5f && disponible == true -> "Listo para iniciar recorrido"
-            km <= 0.5f && disponible == false -> "Conductor cercano, pero no disponible"
-            km > 0.5f && disponible == true -> "Conductor disponible pero muy lejos, aplicarán tarifas más altas"
+            km <= 0.5f && disponible -> "Listo para iniciar recorrido"
+            km <= 0.5f && !disponible -> "Conductor cercano, pero no disponible"
+            km > 0.5f && disponible -> "Conductor disponible pero muy lejos, aplicarán tarifas más altas"
             else -> "No hay conductores disponibles"
         }
     }
@@ -27,24 +27,24 @@ imprimir el mensaje, vuelve a pedir los datos de distancia y disponibilidad*/
         var mensaje: String = ""
         do {
             println("Introduce la distancia a la que esta el conductor: ")
-            val km = readLine()!!.toFloat()
+            val km = readln().toFloat()
 
             println("¿Esta disponible el conductor? (true || false)")
-            val disponible = readLine()!!.toBoolean()
+            val disponible = readln().toBoolean()
 
-            if (disponible == true && km <= 0.5f) {
+            if (disponible && km <= 0.5f) {
                 mensaje = "Listo para iniciar recorrido"
-            } else if (disponible != true && km <= 0.5f) {
+            } else if (!disponible && km <= 0.5f) {
                 mensaje = "Conductor cercano, pero no disponible"
-            } else if (disponible == true && km > 0.5f) {
+            } else if (disponible && km > 0.5f) {
                 mensaje = "Conductor disponible pero muy lejos, aplicarán tarifas más altas"
             } else {
                 mensaje = "No hay conductores disponibles"
             }
-            if (!(disponible == true && km!! <= 0.5f)){
+            if (!(disponible && km <= 0.5f)){
                 println(mensaje)
             }
-        }while (!(disponible == true && km!! <= 0.5f))
+        }while (!(disponible && km <= 0.5f))
         return mensaje
     }
 }
