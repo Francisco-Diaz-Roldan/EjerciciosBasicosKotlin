@@ -37,5 +37,4 @@ RETO OPCIONAL: Imprime el índice del título más largo, para el ejemplo anteri
         }
         return resultado
     }
-
 }
