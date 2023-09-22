@@ -6,7 +6,7 @@ obtener 15 (1+2+3+4+5), para 3 debes obtener 6). Imprime el resultado así: “L
 formatos de String.*/
 
     fun sumatoriaNumerosConFor(n: Int): String {
-        var total: Int = 0
+        var total = 0
 
         for (i in 1..n step 1) {
             total += i
@@ -15,7 +15,7 @@ formatos de String.*/
     }
 
     fun sumatorioNumerosConWhile(n: Int): String {
-        var total: Int = 0
+        var total = 0
 
         val i = 1
         while (i <= n) {

@@ -25,7 +25,6 @@ RETO OPCIONAL: Imprime el índice del título más largo, para el ejemplo anteri
         val peliculas = arrayOf("Jumanji","Toy Story", "Pulp Fiction", "Batman: El caballero de la noche","Kill Bill")
         var mayorLongitud =0
         var peliculaMasLarga =""
-
         var resultado =""
 
         for ((posicion,pelicula) in peliculas.withIndex()){
