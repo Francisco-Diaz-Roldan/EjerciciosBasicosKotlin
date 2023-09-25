@@ -24,7 +24,7 @@ imprimir el mensaje, vuelve a pedir los datos de distancia y disponibilidad*/
     }
 
     fun uberOpcional(): String {
-        var mensaje: String = ""
+        var mensaje = ""
         do {
             println("Introduce la distancia a la que esta el conductor: ")
             val km = readln().toFloat()

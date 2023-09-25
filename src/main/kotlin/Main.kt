@@ -1,7 +1,7 @@
 import com.example.ejerciciosbasicosdeprogramacionenkotlin.Ejercicio2
 
 fun main(args: Array<String>) {
-
+/*
     println("Ejercicio1")
     // Creo una instancia de la clase Ejercicio1
     val ejercicio1 = Ejercicio1()
@@ -61,7 +61,7 @@ fun main(args: Array<String>) {
     val resultado5Op = ejercicio5Op.peliculaMasLargaOpcional()
     println(resultado5Op)
     println("")
-
+*/
 
     //Ejercicio 6
     println("Ejercicio6")

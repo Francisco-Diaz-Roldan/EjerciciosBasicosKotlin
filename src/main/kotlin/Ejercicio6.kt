@@ -12,10 +12,11 @@ imprimir “Inserta un número positivo*/
             println("Inserta un número positivo")
             val n = readln().toInt()
             println("Numeros pares en el rango de 1 a $n...")
-            for (i in 1..n step 1){
-                if (esPar(i)){
-                    println(i)
-                }
+            for (i in 2..n step 1){
+                if (esPar(i))
+                    print(i)
+                if(!esPar(i)&&(n!=2)&&(i<n))
+                    print(",")
             }
         }while (n<0)
     }
